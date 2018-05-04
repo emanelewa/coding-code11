@@ -13,8 +13,15 @@
     font-family:Terminal Dosis-Book;
 }
 
+@font-face {
+    src: url("../fonts/Terminal Dosis-Bold.ttf");
+    font-family:Terminal Dosis-Bold;
+}
+
 body{
     margin: 0;
+    background-color: white !important;
+    background-image: none!important;
 }
 
 /*wrapper section****************/
@@ -67,7 +74,7 @@ body{
 }
 
 .wrapper header .logo_header .top_menu{
-    width: 536px;
+    width: 515px;
     height: 50px;
     float: left;
 }
@@ -119,9 +126,9 @@ body{
 /*--menu_2 started--****************/
 .wrapper header .menu .menu_2 {
     height: auto;
-    width: auto;
     display: inline-block;
     margin: 0;
+    width: 847px;
 }
 
 .wrapper header .menu .menu_2 ul li {
@@ -145,7 +152,7 @@ body{
 
 .wrapper header .menu .menu_2 .booNavigation li.navItem {
     background-color: transparent;
-    padding: 5px 19px;
+    padding: 5px 18px;
     float: left;
     text-decoration: none;
     transition: all .3s ease;
@@ -168,7 +175,7 @@ body{
 
 .wrapper header .menu .menu_2 .booNavigation li.navItem .navContent {
     background-color: #f7edca;
-    left: 95px;
+    left: 92px;
     position: absolute;
     top: 50px;
     z-index: 99999;
@@ -282,18 +289,206 @@ body{
 }
 
 
-/*site section**
+/*site section************************************************************************/
 .wrapper .site{
-    width: 100%;
     height: auto;
     border: 1px solid #2072ff;
-    padding:10px;
     margin: 0 auto;
+    padding: 0 250px;
 }
-**************/
+.wrapper .site .features{
+    height:330px ;
+    overflow: hidden;
+}
+.wrapper .site .features .features_head{
+    height:auto ;
+    overflow: hidden;
+    padding-bottom: 40px;
+
+}
+.wrapper .site .features .features_head h1{
+    color: #747272;
+    font-family:telegrafico;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    float:left ;
+}
+.wrapper .site .features .features_head .features_bg{
+    background-image: url("../images/feature_head.png");
+    background-repeat: repeat-x;
+    height:10px;
+    float: right;
+    width: 750px;
+    margin-top: 3px;
+}
+/*products*/
+.wrapper .site .features .products{
+    height: 270px; ;
+    overflow: hidden;
+}
+.wrapper .site .features .products .product{
+    height: 255px; ;
+    width: 190px;
+    background-color: #d9d9d9;
+    border: 2px solid #bcbcbc;
+    float: left;
+    margin-left: 21px;
+}
+.wrapper .site .features .products .product:first-child{
+    margin-left: 0;
+    float: left;
+}
+.wrapper .site .features .products .product .top_pro{
+   width: 170px;
+    height: 158px;
+    margin: 10px auto;
+}
+.wrapper .site .features .products .product .bottom_pro{
+    height: 75px;
+    padding: 5px;
+}
+.wrapper .site .features .products .product .bottom_pro h1{
+    color: #494949;
+    font-family:Terminal Dosis-Book;
+    font-size: 16px;
+    font-weight: normal;
+}
+.wrapper .site .features .products .product .bottom_pro .connect{
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.wrapper .site .features .products .product .bottom_pro .connect button{
+    background-color: #f65931;
+    border-radius: 3px;
+    padding: 5px 20px;
+    color: white;
+    font-family:Terminal Dosis-Book;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #c45d40;
+}
+.wrapper .site .features .products .product .bottom_pro .connect button:focus{
+    outline: none;
+}
+.wrapper .site .features .products .product .bottom_pro .connect .spa_price{
+    float: right;
+    width: auto;
+    height: auto;
+}
+.wrapper .site .features .products .product .bottom_pro .connect .price{
+    float: left;
+    border: 1px solid #777777;
+    width: 15px;
+    height: 25px;
+    color: #636363;
+    font-family:Terminal Dosis-Bold;
+    background-color: #d2d2d2;
+    text-align: center;
+}
+.wrapper .site .features .products .product .bottom_pro .connect .price:first-child{
+    background-color: #535353;
+    color: white;
+    font-family:Terminal Dosis-Bold;
+
+}
+
+/*brands*********/
+.wrapper .site .brands{
+    height: auto ;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.wrapper .site .brands .brands_head{
+    height:auto ;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.wrapper .site .brands .brands_head h1{
+    color: #747272;
+    font-family:telegrafico;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    float:left ;
+}
+.wrapper .site .brands .brands_head .features_bg{
+    background-image: url("../images/feature_head.png");
+    background-repeat: repeat-x;
+    height:10px;
+    float: right;
+    width: 750px;
+    margin-top: 3px;
+}
+.wrapper .site .brands .brand{
+    height: 150px;
+    overflow: hidden;
+}
+/**barand slider************************************************************************************/
+
+/* Custom Elastislide Styling */
+
+.wrapper .site .brands .brand .demo-1 .elastislide-horizontal {
+    padding: 10px 37px;
+    border-radius: 10px/90px;
+    box-shadow:
+            0 1px 3px rgba(0, 0, 0, 0.1),
+            inset -2px 0 3px 2px rgba(255, 255, 255, 0.6),
+            inset 2px 0 3px 2px rgba(255, 255, 255, 0.6),
+            inset -10px 0 10px 1px rgba(155, 155, 155, 0.1),
+            inset 10px 0 10px 1px rgba(155, 155, 155, 0.1);
+}
+
+.wrapper .site .brands .brand .elastislide-horizontal{
+    padding: 20px 40px !important;
+}
+.wrapper .site .brands .brand .elastislide-horizontal ul li{
+    max-width: 120px !important;
+    max-height: 150px !important;
+}
+
+.wrapper .site .brands .brand .elastislide-horizontal ul {
+    max-height: 120px !important;
+}
+
+.wrapper .site .brands .brand .demo-1 .elastislide-wrapper:before,
+.wrapper .site .brands .brand .demo-1 .elastislide-wrapper:after{
+    content: '';
+    position: absolute;
+    z-index: -2;
+    bottom: 15px;
+    left:  20px;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px/90px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.wrapper .site .brands .brand .demo-1 .elastislide-wrapper:after {
+    right: 20px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
 
 
-/*footer started*/
+/***brand slider end********************************************************************************************/
+
+
+
+
+/*footer started***************************************************************/
 .wrapper footer{
     height: auto;
 }
