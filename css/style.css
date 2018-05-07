@@ -27,7 +27,6 @@ body{
 /*wrapper section****************/
 .wrapper{
     height: auto;
-    border: 1px solid darkorange ;
     margin: 0 auto;
 }
 /*header**********************/
@@ -194,7 +193,7 @@ body{
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    width: 250%;
+    width: 476%;
     padding: 0;
     margin: 0;
     line-height: 30px;
@@ -292,10 +291,113 @@ body{
 /*site section************************************************************************/
 .wrapper .site{
     height: auto;
-    border: 1px solid #2072ff;
     margin: 0 auto;
     padding: 0 250px;
 }
+/*head_slider***************/
+.wrapper .site .head_slider{
+   margin-top: 20px;
+    margin-bottom: 80px;
+    height: 430px;
+    overflow: hidden;
+    background-color: #95d4d2;
+    box-shadow: 1px 5px #8eccca;
+
+
+
+}
+#slider_container_1 {
+    float: left;
+    padding:0!important;
+    width: 849px;
+    position: relative!important;
+    height: 420px;
+}
+
+#SliderName{
+    width: 845px !important;
+    height: 345px;
+    margin: auto;
+}
+
+div#SliderName div div div{
+    bottom: -55px!important;
+
+}
+#SliderName img{
+    width: 845px !important;
+    height: 355px;
+    margin: auto;
+}
+.SliderNameNext{
+    height: 400px!important;
+}
+
+.SliderNameDescription{
+    font-family: Verdana;
+    font-size: 10px;
+    text-align: left;
+    padding: 5px;
+    width: auto;
+    position: absolute;
+    right: 0!important;
+    padding-right: 20px;
+    height: 193%;
+}
+
+.SliderNameDescription button{
+    padding: 10px 20px;
+    color: white;
+    font-family:telegrafico;
+    background-color: #8ec9c7;
+    box-shadow: 1px 1px #7ab7b5;
+    border: 1px solid #79c3c1;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.SliderNameDescription button:hover{
+    background-color: #f65931;
+    box-shadow: 1px 1px #df4f2b;
+    border: 1px solid #df4f2b;
+}
+.SliderNameDescription button:focus{
+    background-color: #f65931;
+    box-shadow: 1px 1px #df4f2b;
+    border: 1px solid #df4f2b;
+    outline: 0;
+}
+.SliderNameDescription strong{
+    color: white;
+    font-family:telegrafico;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+
+#SliderNameNavigation {
+    margin:15px !important;
+    padding-top: 15px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    height: 40px;
+}
+
+#SliderNameNavigation a:link, #SliderNameNavigation a:active, #SliderNameNavigation a:visited, #SliderNameNavigation a:hover{
+    background: url(../images/circ.png) no-repeat center center;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#SliderNameNavigation a.active:link, #SliderNameNavigation a.active:active, #SliderNameNavigation a.active:visited, #SliderNameNavigation a.active:hover{
+    background: url(../images/circ_active.png) no-repeat center center;
+}
+
+
+/*features**********************************************************/
 .wrapper .site .features{
     height:330px ;
     overflow: hidden;
@@ -333,7 +435,7 @@ body{
     background-color: #d9d9d9;
     border: 2px solid #bcbcbc;
     float: left;
-    margin-left: 21px;
+    margin-left: 28px;
 }
 .wrapper .site .features .products .product:first-child{
     margin-left: 0;
@@ -396,6 +498,7 @@ body{
 
 }
 
+
 /*brands*********/
 .wrapper .site .brands{
     height: auto ;
@@ -446,7 +549,7 @@ body{
     padding: 20px 40px !important;
 }
 .wrapper .site .brands .brand .elastislide-horizontal ul li{
-    max-width: 120px !important;
+    max-width: 153px !important;
     max-height: 150px !important;
 }
 
@@ -481,9 +584,254 @@ body{
     -o-transform: rotate(3deg);
     transform: rotate(3deg);
 }
-
-
 /***brand slider end********************************************************************************************/
+
+/*Latest****************************************/
+.wrapper .site .Latest{
+    height: auto ;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.wrapper .site .Latest .Latest_head{
+    height:auto ;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.wrapper .site .Latest .Latest_head h1{
+    color: #747272;
+    font-family:telegrafico;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    float:left ;
+}
+.wrapper .site .Latest .Latest_head .features_bg{
+    background-image: url("../images/feature_head.png");
+    background-repeat: repeat-x;
+    height:10px;
+    float: right;
+    width: 750px;
+    margin-top: 3px;
+}
+.wrapper .site .Latest .Latest_pro{
+    height: 400px;
+    overflow: hidden;
+}
+
+/*slider latest*************/
+
+h1, #wrapper > figure > figcaption {
+    text-align: center;
+}
+#wrapper > figure > figcaption {
+    margin: 1em;
+}
+.demo h1,
+.demo #wrapper > figure > figcaption {
+    color: #fff;
+}
+.mis-slider li figcaption {
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.main {
+    width: 80%;
+    margin: 2em auto;
+    /*display: block;*/
+}
+div.main pre {
+    font-size: 1.1em;
+    overflow: auto;
+    max-height: 500px;
+    background-color: #fff;
+    padding: 0 1em 1em;
+}
+@media screen and (min-width: 1200px) {
+    .main {
+        width: 50%;
+    }
+}
+
+.mis-slider li img{
+    border-radius: 0!important;
+}
+.mis-stage{
+    height: 405px!important;
+}
+.mis-nav-list{
+    width: auto!important;
+}
+
+.mis-nav-list li a{
+    width: 30px!important;
+    height: 30px!important;
+    background-color: #d0d0d0!important;
+    display: block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0 0 0 1px #B9B9B9;
+    box-shadow: inset 0 0 0 1px #B9B9B9;
+    margin: 0 3px;
+}
+.mis-nav-list li.mis-current a, .mis-nav-list li a:hover{
+    background: #f85831!important;
+    opacity: 1!important;
+    -webkit-box-shadow: inset 0 0 0 1px #d14928;
+    box-shadow: inset 0 0 0 1px #d14928;
+}
+.mis-slider{
+    background-color: #f5ecce!important;
+}
+
+.mis-next{
+    padding-top: 173px!important;
+}
+.mis-prev{
+    padding-top: 173px!important;
+}
+.mis-nav-buttons a:hover{
+    color:  #f85831!important;
+}
+
+.wrapper .site .Latest .Latest_pro .product{
+    height: 305px; ;
+    width: 250px;
+    background-color: #d9d9d9;
+    border: 2px solid #bcbcbc;
+    float: left;
+    margin-left: 28px;
+}
+.wrapper .site .Latest .Latest_pro  .product:first-child{
+    margin-left: 0;
+    float: left;
+}
+.wrapper .site .Latest .Latest_pro  .product .top_pro{
+    width: 220px;
+    height: 200px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.wrapper .site .Latest .Latest_pro  .product .top_pro_black{
+    width: 216px;
+    height: 196px;
+    margin: 5px auto;
+    background-image: url("../images/latest_bg.png");
+    background-repeat: repeat-x;
+    display: none;
+    position: absolute;
+    z-index: 444;
+    top: 44px;
+    left: 57px;
+    text-align: center;
+}
+
+.wrapper .site .Latest .Latest_pro  .product .top_pro_black .but_black{
+    width: 216px;
+    height: 196px;
+}
+
+.wrapper .site .Latest .Latest_pro  .product .top_pro_black .but_black button{
+    background-color: #dedede;
+    color: #494949;
+    font-family:Terminal Dosis-Bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #5b5b5b;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 135px;
+    margin-top: 45px;
+    opacity: 1!important;
+
+}
+.wrapper .site .Latest .Latest_pro  .product .top_pro_black .but_black button:hover{
+    background-color: #f1512a;
+    color: white;
+}
+.wrapper .site .Latest .Latest_pro  .product .top_pro_black .but_black button:focus{
+    background-color: #f1512a;
+    color: white;
+    outline: none;
+}
+
+.wrapper .site .Latest .Latest_pro  .product .bottom_pro{
+    height: 75px;
+    padding: 10px;
+}
+.wrapper .site .Latest .Latest_pro  .product .bottom_pro h1{
+    color: #494949;
+    font-family:Terminal Dosis-Book;
+    font-size: 16px;
+    font-weight: 600;
+}
+.wrapper .site .Latest .Latest_pro  .product .bottom_pro .connect{
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.wrapper .site .Latest .Latest_pro .product .bottom_pro .connect button{
+    background-color: #f65931;
+    border-radius: 3px;
+    padding: 8px 20px;
+    color: white;
+    font-family:Terminal Dosis-Book;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #c45d40;
+}
+.wrapper .site .Latest .Latest_pro  .product .bottom_pro .connect button:focus{
+    outline: none;
+}
+.wrapper .site .Latest .Latest_pro  .product .bottom_pro .connect .spa_price{
+    float: right;
+    width: auto;
+    height: auto;
+}
+.wrapper .site .Latest .Latest_pro .product .bottom_pro .connect .price{
+    float: left;
+    border: 1px solid #777777;
+    width: 25px;
+    height: 35px;
+    color: #636363;
+    font-family:Terminal Dosis-Bold;
+    background-color: #d2d2d2;
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+}
+.wrapper .site .Latest .Latest_pro .product .bottom_pro .connect .price:first-child{
+    background-color: #535353;
+    color: white;
+    font-family:Terminal Dosis-Bold;
+
+}
+/*******slider latest ended************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -606,6 +954,10 @@ body{
     font-size: 14px;
     font-family:Terminal Dosis-Book;
     margin-top: 25px;
+}
+
+.clear{
+    clear: both;
 }
 
 

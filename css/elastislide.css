@@ -2,7 +2,7 @@
 
 .elastislide-list {
 	list-style-type: none;
-	display: none;
+	display: inline-block;
 }
 
 .no-js .elastislide-list {
